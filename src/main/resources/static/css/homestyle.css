@@ -1,0 +1,56 @@
+.main{
+	height: 100vh;
+	top:0;
+	position:center;
+	background-size:cover;
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/images/homebg.jpeg");
+    background-size: 100%; /*adjust the size of the image to cover the entire background*/
+    background-position:center; /*center the image horizontally and vertically*/
+    background-repeat: no-repeat; /*do not repeat the image*/
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: top 0.3s;
+}
+
+.navbar.sticky {
+  top: -60px;
+}
+
+
+.container h1{
+	font-size:150px;
+	line-height:120px;
+	color:transparent;
+	-webkit-text-stroke:1px #fff;
+	background: url("/images/back.png");
+	-webkit-background-clip:text;
+	background-position:0 0;
+	animation:back 20s linear infinite;
+}
+@keyframes back{
+	100%{
+		background-position:2000px 0;
+	}
+}
+.nav-link{
+	position:relative;
+}
+.nav-link::after {
+	content:'';
+	opacity: 0;
+	transition: all 0.2s;
+	height: 2px;
+	width: 100%;
+	background-color: greenyellow;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.nav-link:hover::after{
+	opacity:1;
+}

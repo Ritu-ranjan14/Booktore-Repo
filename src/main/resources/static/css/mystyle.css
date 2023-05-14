@@ -1,0 +1,17 @@
+body {
+  background-image: url("/images/background.jpeg");
+  background-size: 100%; /* adjust the size of the image to cover the entire background */
+  background-position: center; /* center the image horizontally and vertically */
+  background-repeat: no-repeat; /* do not repeat the image */
+}
+.container{
+	align:center;
+	width:700px;
+	margin:100px auto 100px auto;
+	background-color:rgba(0, 0, 0, 0.05);
+}
+h4{
+	text-align:center;
+	padding:20px;
+	font-family:sans-serif;
+}
